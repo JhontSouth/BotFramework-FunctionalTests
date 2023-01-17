@@ -4,7 +4,7 @@
   "parameters": {
     "containerRegistryName": {
       "type": "string",
-      "defaultValue": "bffncontainerregistry",
+      "defaultValue": "bffncontainerregistry-jhontgow",
       "metadata": {
         "description": "Specifies the name of the Container Registry."
       }
