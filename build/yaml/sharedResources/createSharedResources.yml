@@ -32,7 +32,7 @@ variables:
   InternalResourceGroupName: $[coalesce(variables['RESOURCEGROUPNAME'], 'BFFN-Shared')]
   InternalVirtualNetworkName: "bffnvirtualnetwork$($env:RESOURCESUFFIX)"
   InternalKeyVaultObjectId: $[coalesce(variables['KEYVAULTOBJECTID'], '')]
-  InternalStorageAccountName: "bffnstorageaccountjhontgow$($env:RESOURCESUFFIX)"
+  InternalStorageAccountName: "bffnstorageaccountjhont$($env:RESOURCESUFFIX)"
 
 stages:
 - stage: Create_Resource_Group
