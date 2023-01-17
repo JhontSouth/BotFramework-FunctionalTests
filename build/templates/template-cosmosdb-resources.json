@@ -3,12 +3,14 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "accountName": {
+            "defaultValue": "account-jhontgow"
             "type": "string",
             "metadata": {
                 "description": "Cosmos DB account name"
             }
         },
         "databaseName": {
+            "defaultValue": "database-jhontgow"
             "type": "string",
             "metadata": {
                 "description": "The name for the Core (SQL) database"
@@ -16,7 +18,7 @@
         }
     },
     "variables": {
-        "accountName": "[toLower(parameters('accountName'))]-jhontgow"
+        "accountName": "[toLower(parameters('accountName'))]"
     },
     "resources": [
         {
