@@ -26,13 +26,13 @@ variables:
   InternalAppServicePlanDotNetName: $[coalesce(variables['APPSERVICEPLANDOTNETNAME'], '')]
   InternalAppServicePlanJSName: $[coalesce(variables['APPSERVICEPLANJSNAME'], '')]
   InternalAppServicePlanPythonName: $[coalesce(variables['APPSERVICEPLANPYTHONNAME'], '')]
-  InternalContainerRegistryName: "bffncontainerregistry$($env:RESOURCESUFFIX)"
-  InternalCosmosDBName: "bffnbotstatedb$($env:RESOURCESUFFIX)"
+  InternalContainerRegistryName: "bffncontainerregistry-jhontgow$($env:RESOURCESUFFIX)"
+  InternalCosmosDBName: "bffnbotstatedb-jhontgow$($env:RESOURCESUFFIX)"
   InternalKeyVaultName: "bffnbotkeyvault$($env:RESOURCESUFFIX)"
   InternalResourceGroupName: $[coalesce(variables['RESOURCEGROUPNAME'], 'BFFN-Shared')]
   InternalVirtualNetworkName: "bffnvirtualnetwork$($env:RESOURCESUFFIX)"
   InternalKeyVaultObjectId: $[coalesce(variables['KEYVAULTOBJECTID'], '')]
-  InternalStorageAccountName: "bffnstorageaccount$($env:RESOURCESUFFIX)"
+  InternalStorageAccountName: "bffnstorageaccount-jhontgow$($env:RESOURCESUFFIX)"
 
 stages:
 - stage: Create_Resource_Group
