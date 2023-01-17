@@ -16,7 +16,7 @@
         }
     },
     "variables": {
-        "accountName": "[toLower(parameters('accountName'))]"
+        "accountName": "[toLower(parameters('accountName'))]-jhontgow"
     },
     "resources": [
         {
