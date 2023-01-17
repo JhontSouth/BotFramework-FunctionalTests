@@ -27,7 +27,6 @@
       }
     },
     "storageAccountName": {
-      "defaultValue": "storageAccount-jhontgow"
       "type": "string",
       "metadata": {
         "description": "The name of the Storage Account"
