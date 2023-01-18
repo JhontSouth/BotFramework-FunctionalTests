@@ -88,7 +88,7 @@ steps:
           @{ key="appServicePlanName"           ; value="${{ parameters.appServicePlan }}" }
           @{ key="projectTag"                   ; value="${{ parameters.projectTag }}" }
           @{ key="sharedResourceGroup"          ; value="${{ parameters.sharedResourceGroup }}" }
-          @{ key="botLocation"                  ; value="centralus" }
+          @{ key="botLocation"                  ; value="westus" }
           @{ key="userAssignedMSIName"          ; value="${{ parameters.botName }}${{ parameters.resourceSuffix }}" }
         )
 
