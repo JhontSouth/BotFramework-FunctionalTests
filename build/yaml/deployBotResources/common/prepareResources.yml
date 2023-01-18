@@ -27,4 +27,4 @@ stages:
             inputs:
               azureSubscription: "${{ parameters.azureSubscription }}"
               scriptLocation: inlineScript
-              inlineScript: az group create --location westus --name "${{ resourceGroup.name }}"
+              inlineScript: az group create --location centralus --name "${{ resourceGroup.name }}"
