@@ -9,7 +9,7 @@ pr: none
 
 resources:
   pipelines:
-    - pipeline: "ADeploySkillBotsJhont02"
+    - pipeline: "Test Scenarios Pipeline"
       source: "A-Deploy-Skill-Test-Bots-(daily)"
       trigger:
         branches:
