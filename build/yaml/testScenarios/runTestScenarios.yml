@@ -64,7 +64,6 @@ variables:
   InternalResourceSuffix: $[coalesce(variables['RESOURCESUFFIX'], '')]
   InternalSharedResourceGroupName: $[coalesce(variables['SHAREDRESOURCEGROUP'], 'BFFN-Shared')]
   InternalStorageAccountName: "bffnstorageaccount$(INTERNALRESOURCESUFFIX)"
-  InternalBuildId: "$(resources.pipeline.BotResources.runId)"
 
 pool:
   vmImage: "windows-2022"
@@ -87,7 +86,7 @@ stages:
         WaterfallSkillBotJS: "$(BFFNWATERFALLSKILLBOTJSAPPID)"
         WaterfallSkillBotPython: "$(BFFNWATERFALLSKILLBOTPYTHONAPPID)"
       azureSubscription: "$(AZURESUBSCRIPTION)"
-      deployBuildId: "$(InternalBuildId)"
+      deployBuildId: "$(resources.pipeline.BotResourcesPipeline.runId)"
       keyVault: "$(INTERNALKEYVAULTNAME)"
       resourceGroup: "$(INTERNALRESOURCEGROUPNAME)"
       resourceSuffix: "$(INTERNALRESOURCESUFFIX)"
