@@ -9,7 +9,7 @@ pr: none
 
 resources:
   pipelines:
-    - pipeline: testScenariosPipeline
+    - pipeline: BotResourcesPipeline
       source: BotResources
       trigger:
         branches:
@@ -86,7 +86,7 @@ stages:
         WaterfallSkillBotJS: "$(BFFNWATERFALLSKILLBOTJSAPPID)"
         WaterfallSkillBotPython: "$(BFFNWATERFALLSKILLBOTPYTHONAPPID)"
       azureSubscription: "$(AZURESUBSCRIPTION)"
-      deployBuildId: "$(resources.pipelines.BotResources.runID)"
+      deployBuildId: "$(resources.pipelines.BotResources.Build.BuildNumber)"
       keyVault: "$(INTERNALKEYVAULTNAME)"
       resourceGroup: "$(INTERNALRESOURCEGROUPNAME)"
       resourceSuffix: "$(INTERNALRESOURCESUFFIX)"
