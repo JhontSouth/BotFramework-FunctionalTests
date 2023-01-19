@@ -10,12 +10,7 @@ pr: none
 resources:
   pipelines:
     - pipeline: testScenariosPipeline
-      source: aDeploySkillTestBots
-      trigger:
-        branches:
-          include:
-            - main
-            - releases/*
+
 
 parameters:
   - name: dependenciesVersionDotNet
