@@ -15,7 +15,7 @@ resources:
         branches:
           include:
             - main
-            - releases/*
+
 
 parameters:
   - name: dependenciesVersionDotNet
