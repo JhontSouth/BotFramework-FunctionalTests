@@ -11,11 +11,7 @@ resources:
   pipelines:
     - pipeline: TestScenariosPipeline
       source: A-Deploy-Skill-Test-Bots
-      trigger:
-        branches:
-          include:
-            - main
-
+      
 
 parameters:
   - name: dependenciesVersionDotNet
