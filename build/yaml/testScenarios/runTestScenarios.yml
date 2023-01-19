@@ -10,7 +10,7 @@ pr: none
 resources:
   pipelines:
     - pipeline: TestScenariosPipeline
-      source: A-Deploy-Skill-Test-Bots-(daily)
+      source: A-Deploy-Skill-Test-Bots
       trigger:
         branches:
           include:
