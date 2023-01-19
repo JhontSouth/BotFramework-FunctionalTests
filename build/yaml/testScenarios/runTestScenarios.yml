@@ -86,7 +86,7 @@ stages:
         WaterfallSkillBotJS: "$(BFFNWATERFALLSKILLBOTJSAPPID)"
         WaterfallSkillBotPython: "$(BFFNWATERFALLSKILLBOTPYTHONAPPID)"
       azureSubscription: "$(AZURESUBSCRIPTION)"
-      deployBuildId: "$(resources.pipelines.BotResources.Build.BuildId)"
+      deployBuildId: "$(resources.pipeline.BotResources.Build.BuildId)"
       keyVault: "$(INTERNALKEYVAULTNAME)"
       resourceGroup: "$(INTERNALRESOURCEGROUPNAME)"
       resourceSuffix: "$(INTERNALRESOURCESUFFIX)"
